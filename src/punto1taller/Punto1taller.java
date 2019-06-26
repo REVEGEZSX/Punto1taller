@@ -10,7 +10,7 @@ public class Punto1taller
     public static double nota;
     public static void main(String[] args) 
     {
-        int cantE, posmay=0, posmen=0, Apro = 0;
+        int cantE, posmay = 0, posmen = 0, Apro = 0;
         
         double notamay=0,notamen=5, notaprom = 0, notaacum = 0;
         
@@ -39,19 +39,20 @@ public class Punto1taller
                 posmen = i;
                 notamen = nota; 
             }
-            if(nota = 3)
+            
+            if(nota == 3)
             {
                 Apro++;
             }
         }
         notaprom = notaacum/cantE;
         System.out.println("el promedio de los estudiantes es: "+notaprom);
-        System.out.println("El numero de estudiantes Aprobados es :"+Apro);
-        System.out.println("El numero de estudiantes Reprobados es :"+Repro);
+        System.out.println("El numero de estudiantes Aprobados cn el minimo es :"+Apro);
         
         System.out.println("La nota mayor es: "+notamay+" del estudiante "+nombre[posmay]);
         System.out.println("La nota menor es: "+notamen+" del estudiante "+nombre[posmen]);
         
+        System.out.println("Lista de estudiantes");
         for(int x = 0; x<cantE;x++)
         {
             System.out.println(nombre[x]);
